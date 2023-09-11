@@ -4,25 +4,28 @@ annotate service.Passenger with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Value : CustomerID,
+            Value : FullName,
         },
         {
             $Type : 'UI.DataField',
-            Value : createdAt,
+            Value : CountryCode_code,
         },
         {
             $Type : 'UI.DataField',
-            Value : createdBy,
+            Value : City,
         },
         {
             $Type : 'UI.DataField',
-            Value : LastChangedAt,
+            Value : to_Booking.to_Travel.Description,
         },
         {
             $Type : 'UI.DataField',
-            Value : LastChangedBy,
+            Value : PostalCode,
         },
-    ]
+        {
+            $Type : 'UI.DataField',
+            Value : Street,
+        },]
 );
 annotate service.Passenger with @(
     UI.FieldGroup #GeneratedGroup1 : {
@@ -97,5 +100,12 @@ annotate service.Passenger with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup1',
         },
+    ]
+);
+annotate service.Passenger with @(
+    UI.SelectionFields : [
+        CountryCode_code,
+        City,
+        PostalCode,
     ]
 );
