@@ -8,11 +8,11 @@ annotate service.Passenger with @(
         },
         {
             $Type : 'UI.DataField',
-            Value : CountryCode_code,
+            Value : City,
         },
         {
             $Type : 'UI.DataField',
-            Value : City,
+            Value : CountryCode_code,
         },
         {
             $Type : 'UI.DataField',
