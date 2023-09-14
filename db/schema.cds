@@ -88,6 +88,7 @@ Capabilities: {
 		AllowedExpressions: 'SingleRange'
 	}]}
 });
+// for disabling delete button
 annotate Travel with @(
    Capabilities.DeleteRestrictions : {
        $Type : 'Capabilities.DeleteRestrictionsType',
